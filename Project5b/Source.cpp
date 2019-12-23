@@ -1135,7 +1135,8 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int nCmdShow)
 		{
 			glMatrixMode(GL_PROJECTION);
 			glLoadIdentity();
-			glScalef(0.5, 0.5, 0.5);
+			//glScalef(0.5, 0.5, 0.5);
+			glTranslatef(0, 0, -1);
 			gluPerspective(40, 1.3, 1, 10);
 			glFrustum(-2, 2, -2,2,1, 10);
 			
